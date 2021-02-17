@@ -12,6 +12,8 @@ services:
       - 5434:5432
   todo-svc:
     image: ghcr.io/super-bootcamp-2021/todo-svc:latest
+    command:
+      - service:start
     depends_on:
       - postgres
     environment:
