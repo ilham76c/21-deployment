@@ -16,7 +16,7 @@ async function init(): Promise<void> {
     console.log('database connected');
   } catch (err) {
     console.error('database connection failed');
-    return;
+    process.exit(1);
   }
 }
 
